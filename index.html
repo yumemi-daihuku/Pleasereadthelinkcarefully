@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>画像表示ページ</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body, html {
+            height: 100%;
             margin: 0;
-            background-color: #000; /* 背景を黒に設定 */
+            overflow: hidden; /* スクロールバーを消す */
+            background-color: #000;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        .fullscreen-img {
+            width: 100vw;   /* 画面の横幅いっぱい */
+            height: 100vh;  /* 画面の高さいっぱい */
+            object-fit: cover; /* 比率を保ちつつ、足りない部分は切り取って充填 */
         }
     </style>
 </head>
 <body>
 
-    <img src="Jeff_Killer.png" alt="画像">
+    <img src="Jeff_Killer.png" alt="画像" class="fullscreen-img">
 
 </body>
 </html>
