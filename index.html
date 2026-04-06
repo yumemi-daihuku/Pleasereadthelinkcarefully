@@ -12,9 +12,10 @@
             background-color: #000;
         }
         .fullscreen-img {
-            width: 100vw;   /* 画面の横幅いっぱい */
-            height: 100vh;  /* 画面の高さいっぱい */
-            object-fit: cover; /* 比率を保ちつつ、足りない部分は切り取って充填 */
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* 比率を保ち、画像全体が収まるようにリサイズ */
+}
         }
     </style>
 </head>
